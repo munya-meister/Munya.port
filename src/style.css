@@ -213,3 +213,14 @@ html,body,#root,main{background:#06172f!important;color:#f1f6ff}
 
 /* Uploaded crystal star art in the brand ticker */
 .ticker-inner .ticker-crystal{object-fit:contain;width:clamp(34px,3vw,50px);height:clamp(34px,3vw,50px)}
+
+/* Seamless horizontal news-style marquee */
+.ticker{overflow:hidden;width:100%}
+.ticker-track{display:flex;width:max-content;animation:portfolio-ticker-scroll 32s linear infinite;will-change:transform}
+.ticker-group{display:flex;align-items:center;justify-content:space-around;gap:clamp(28px,3vw,65px);flex:none;min-width:100vw;padding:14px clamp(28px,3vw,65px)}
+.ticker-group span{white-space:nowrap;font:900 clamp(12px,1.1vw,16px) Poppins,sans-serif;letter-spacing:.08em}
+.ticker-group .ticker-star{display:inline-flex;flex:none;align-items:center;justify-content:center}
+.ticker-group .ticker-crystal{width:clamp(34px,3vw,50px);height:clamp(34px,3vw,50px);object-fit:contain;filter:drop-shadow(0 0 7px rgba(99,194,255,.6))}
+@keyframes portfolio-ticker-scroll{to{transform:translateX(-50%)}}
+@media(max-width:600px){.ticker-track{animation-duration:25s}.ticker-group{min-width:max-content;gap:30px;padding:12px 15px}}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
