@@ -155,3 +155,30 @@ footer{background:#041124!important}
 .project-showcase-deck .swing-title{font-size:clamp(12px,1.3vw,18px);line-height:1.2;overflow-wrap:anywhere}
 .project-showcase-deck .swing-card small{font-size:10px}
 @media(max-width:750px){.project-showcase-deck{height:260px}.project-showcase-deck .swing-deck{height:240px;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;padding:15px 20px;gap:12px}.project-showcase-deck .swing-card{width:165px;height:195px;flex:0 0 165px;transform:none!important;margin:0!important;scroll-snap-align:center}.project-showcase-deck .swing-graphic svg{width:42px}.project-showcase-deck .orbit-line{display:none}}
+
+/* Consistent deep-blue palette throughout; featured swinging deck belongs to Projects only. */
+html,body,#root,main{background:#06172f!important;color:#f1f6ff}
+.section,.section-muted,.about-showcase,.contact-section{background:linear-gradient(145deg,#0b2a51 0%,#071d3a 48%,#06172f 100%)!important;color:#f1f6ff!important}
+.section-muted{background:linear-gradient(145deg,#0a2346,#0b315e 50%,#071a35)!important;border-color:#235080!important}
+.header{background:#06172ff2!important;border-color:#2b5783!important}
+.header .nav a{color:#e7efff!important}
+.section-subtitle,.about-story-body p,.skill-card li,.project-bottom span{color:#c6d6ec!important}
+.skill-card,.project-card,.about-skill-card{background:linear-gradient(145deg,#113966,#091d3c)!important;border-color:#245587!important;color:#f3f7ff!important}
+.project-info{background:transparent!important}
+.project-image{background:#0d2a50!important}
+.achievement{border-color:#37628d!important;color:#edf4ff!important}
+.achievement-art{color:#2c5e96!important}
+.contact-panel{background:#091e3c!important;border-color:#275b92!important}
+.ticker{background:#12305a!important;color:#fff!important}
+.ticker-inner b{color:#eaf4ff}
+.project-showcase-deck{position:relative;isolation:isolate;overflow:hidden;margin:24px 0 46px;padding:22px 0 34px;min-height:315px;background:radial-gradient(ellipse at center,#164582 0%,#081e3d 68%,#06172f 100%);border-radius:26px;border:1px solid #245c9b}
+.project-showcase-deck .orbit-line{position:absolute;bottom:38px;left:6%;width:88%;height:110px;border:1px solid #2279dc;border-radius:50%;box-shadow:0 0 35px #006bff45;pointer-events:none}
+.project-showcase-deck .swing-deck{height:280px;display:flex;align-items:center;justify-content:center;padding:18px 20px;overflow:visible}
+.project-showcase-deck .swing-card{height:225px;width:20%;max-width:225px;min-width:145px;transform-origin:50% -90px;padding:16px;box-shadow:0 18px 30px #0008}
+.project-showcase-deck .swing-graphic{font-size:64px;display:flex;align-items:center;justify-content:center;flex:1;opacity:.35}
+.project-showcase-deck .swing-title{font-size:clamp(12px,1.4vw,19px);line-height:1.2;overflow-wrap:anywhere}
+.project-showcase-deck .swing-card small{font-size:11px}
+.project-showcase-deck .card-light{background:linear-gradient(150deg,#f6f9ff,#b6d0f3);color:#071b39}
+.project-showcase-deck .card-dark{background:linear-gradient(145deg,#0c1628,#142c4d);color:#fff}
+.project-showcase-deck .card-navy{background:linear-gradient(145deg,#2161b6,#0a326c);color:#fff}
+@media(max-width:760px){.project-showcase-deck{min-height:245px}.project-showcase-deck .swing-deck{height:240px;overflow-x:auto;justify-content:flex-start;scroll-snap-type:x mandatory;gap:10px}.project-showcase-deck .swing-card{flex:0 0 155px;width:155px;min-width:155px;height:185px;transform:none;margin:0;scroll-snap-align:center}.project-showcase-deck .swing-title{font-size:13px}.project-showcase-deck .swing-graphic{font-size:42px}.project-showcase-deck .orbit-line{display:none}}
