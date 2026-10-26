@@ -190,3 +190,18 @@ html,body,#root,main{background:#06172f!important;color:#f1f6ff}
 
 /* Accessible, frontend-only Netlify contact form */
 .portfolio-contact-form{display:grid;gap:17px;margin:23px 0 22px}.portfolio-contact-form label{display:grid;gap:8px;color:#a7c7ee;font-size:11px;font-weight:800;letter-spacing:.1em}.portfolio-contact-form input,.portfolio-contact-form textarea{display:block;width:100%;background:#06172f;border:1px solid #38618e;border-radius:8px;color:#fff;font:500 15px 'DM Sans',sans-serif;padding:14px 15px;outline:none;resize:vertical;transition:border-color .2s,box-shadow .2s}.portfolio-contact-form input:focus,.portfolio-contact-form textarea:focus{border-color:#67a8ff;box-shadow:0 0 0 3px #2b8cff2e}.portfolio-contact-form input::placeholder,.portfolio-contact-form textarea::placeholder{color:#829ab7}.portfolio-contact-form .contact-submit{width:100%;border-radius:8px;color:white;cursor:pointer}.portfolio-contact-form .contact-submit:disabled{opacity:.7;cursor:wait}.hidden-bot-field{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important}.contact-form-title{font:800 clamp(20px,2vw,28px)/1.2 Poppins,sans-serif;margin:10px 0;color:#fff}.contact-feedback{font-size:13px;line-height:1.5;margin:0}.contact-feedback.success{color:#8be5b1}.contact-feedback.error{color:#ff9e9e}.contact-direct-email{display:flex;justify-content:space-between;gap:10px;align-items:center;overflow-wrap:anywhere;font-size:clamp(13px,1.2vw,16px);color:#c7dafa;border-top:1px solid #3a5d83;padding:17px 0}.contact-direct-email svg{flex-shrink:0}
+
+/* Ensure the contact submit CTA stays readable against the navy contact panel. */
+.contact-section .portfolio-contact-form button.contact-submit,
+.contact-panel .portfolio-contact-form .btn.btn-primary.contact-submit{
+ display:flex!important;align-items:center!important;justify-content:center!important;gap:12px!important;
+ width:100%!important;min-height:54px!important;padding:15px 22px!important;
+ background:#176ce0!important;color:#fff!important;border:1px solid #4897ff!important;
+ border-radius:10px!important;font:800 14px/1.2 Poppins,sans-serif!important;
+ letter-spacing:.06em!important;opacity:1!important;visibility:visible!important;
+ text-shadow:none!important;box-shadow:0 8px 22px #03112780!important;
+}
+.contact-panel .portfolio-contact-form button.contact-submit svg{display:block!important;stroke:#fff!important;opacity:1!important;flex-shrink:0}
+.contact-panel .portfolio-contact-form button.contact-submit:hover:not(:disabled){background:#3488f8!important;transform:translateY(-2px)}
+.contact-panel .portfolio-contact-form button.contact-submit:focus-visible{outline:3px solid #b8d9ff!important;outline-offset:3px}
+.contact-panel .portfolio-contact-form button.contact-submit:disabled{opacity:.75!important;cursor:wait}
