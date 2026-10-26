@@ -87,3 +87,48 @@ body{background:#f0f1f4;color:#101217}
 }
 @media(max-width:900px){.navy-hero .hero-copy{padding-top:0}.navy-hero .hero-tagline{margin-bottom:18px}}
 @media(max-width:750px){.navy-hero{padding-top:14px}.navy-hero .strand-layout{min-height:0}.navy-hero .hero-portrait{margin-top:8px}.navy-hero .hero-portrait>img{-webkit-mask-image:radial-gradient(ellipse 65% 65% at 50% 47%,#000 48%,transparent 100%)!important;mask-image:radial-gradient(ellipse 65% 65% at 50% 47%,#000 48%,transparent 100%)!important}}
+
+/* Single-screen hero on desktop: keep all hero content and navigation cards above the fold. */
+@media(min-width:901px){
+ .navy-hero{min-height:0!important;padding:12px 0 8px!important}
+ .navy-hero .strand-layout{height:clamp(380px,calc(100svh - 350px),510px)!important;min-height:0!important;align-items:center!important}
+ .navy-hero .hero-copy{padding-top:0!important;padding-bottom:0!important}
+ .navy-hero .hero-tagline{margin:8px 0 12px!important}
+ .navy-hero .strand-heading{padding:6px 0!important;margin:0!important}
+ .navy-hero .strand-heading h1{font-size:clamp(64px,7.3vw,114px)!important}
+ .navy-hero .hero-description{font-size:clamp(14px,1.2vw,17px);margin:7px 0 16px!important}
+ .navy-hero .hero-portrait{height:100%!important;align-self:center!important}
+ .navy-hero .orbit-stage{height:clamp(180px,calc(100svh - 545px),270px)!important;margin:0!important}
+ .navy-hero .orbit-stage .swing-deck{height:100%!important;padding:6px 0!important}
+ .navy-hero .swing-card{height:clamp(155px,calc(100svh - 580px),230px)!important}
+ .navy-hero .swing-graphic{font-size:clamp(38px,5vw,78px)!important}
+ .navy-hero .orbit-line{height:100px!important;bottom:8px!important}
+}
+.navy-hero .hero-portrait>img{
+ -webkit-mask-image:radial-gradient(ellipse 76% 74% at 50% 46%,#000 42%,rgba(0,0,0,.92) 61%,transparent 100%)!important;
+ mask-image:radial-gradient(ellipse 76% 74% at 50% 46%,#000 42%,rgba(0,0,0,.92) 61%,transparent 100%)!important;
+ -webkit-mask-composite:initial!important;
+ mask-composite:add!important;
+}
+@media(max-width:900px){
+ .navy-hero{min-height:0!important}
+ .navy-hero .strand-layout{min-height:0!important}
+ .navy-hero .hero-portrait>img{
+  -webkit-mask-image:radial-gradient(ellipse 76% 72% at 50% 46%,#000 44%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse 76% 72% at 50% 46%,#000 44%,transparent 100%)!important;
+ }
+}
+@media(max-width:750px){
+ .navy-hero .hero-tagline{margin-top:10px!important;margin-bottom:12px!important}
+ .navy-hero .strand-heading{padding:8px 0!important}
+ .navy-hero .hero-description{margin:8px 0 14px!important}
+ .navy-hero .hero-portrait{height:clamp(235px,35svh,320px)!important;margin-top:2px!important}
+ .navy-hero .orbit-stage{min-height:210px!important}
+}
+@media(max-height:740px) and (min-width:901px){
+ .navy-hero .strand-layout{height:355px!important}
+ .navy-hero .orbit-stage{height:170px!important}
+ .navy-hero .swing-card{height:150px!important}
+ .navy-hero .hero-name{font-size:clamp(32px,3.8vw,54px)}
+ .navy-hero .strand-heading h1{font-size:clamp(60px,6.7vw,100px)!important}
+}
