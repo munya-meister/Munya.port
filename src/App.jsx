@@ -18,30 +18,27 @@ function ContactForm(){
   setStatus('sending');
   setFeedback('');
   try{
-   const response=await fetch('https://formsubmit.co/ajax/'+encodeURIComponent(profile.email),{
+   const payload=new URLSearchParams();
+   payload.set('form-name','portfolio-contact');
+   payload.set('name',String(values.get('name')||'').trim());
+   payload.set('email',String(values.get('email')||'').trim());
+   payload.set('message',String(values.get('message')||'').trim());
+   payload.set('bot-field','');
+   const response=await fetch('/',{
     method:'POST',
-    headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify({
-     name:String(values.get('name')||'').trim(),
-     email:String(values.get('email')||'').trim(),
-     message:String(values.get('message')||'').trim(),
-     _subject:'New portfolio message - Munyaradzi Mbewe',
-     _template:'table',
-     _honey:'',
-     _captcha:'false'
-    })
+    headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    body:payload.toString()
    });
-   const result=await response.json();
-   if(!response.ok||result.success===false||result.success==='false')throw new Error('Delivery service did not accept the submission.');
+   if(!response.ok)throw new Error('Netlify rejected the submission.');
    setStatus('success');
-   setFeedback('Your message was submitted. Thank you for reaching out!');
+   setFeedback('Message submitted successfully. Thank you for reaching out!');
    form.reset();
   }catch(error){
    setStatus('error');
-   setFeedback('The message could not be submitted. Please try again or contact me by email below.');
+   setFeedback('Message could not be submitted. Please try again or email me directly below.');
   }
  }
- return <form className="portfolio-contact-form" onSubmit={submit}>
+ return <form name="portfolio-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="portfolio-contact-form" onSubmit={submit}><input type="hidden" name="form-name" value="portfolio-contact"/>
   <div className="hidden-bot-field" aria-hidden="true"><label>Leave this field empty<input name="_honey" tabIndex="-1" autoComplete="off"/></label></div>
   <label htmlFor="contact-name">YOUR NAME<input id="contact-name" name="name" placeholder="Your full name" autoComplete="name" required maxLength="120"/></label>
   <label htmlFor="contact-email">EMAIL ADDRESS<input id="contact-email" type="email" name="email" placeholder="you@example.com" autoComplete="email" required maxLength="254"/></label>
