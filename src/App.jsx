@@ -6,9 +6,9 @@ function Photo({src,alt,className=''}){const [failed,setFailed]=useState(false);
 function Header(){const[open,setOpen]=useState(false);const nav=['About','Skills','Projects','Achievements'];return <header className="header"><div className="shell header-inner"><a className="brand" href="#home">M<span>.</span>MBEWE</a><nav className={open?'nav active':'nav'}>{nav.map(n=><a key={n} href={'#'+n.toLowerCase()} onClick={()=>setOpen(false)}>{n}</a>)}<a className="nav-contact" href={wa} target="_blank" rel="noreferrer">LET'S TALK <ArrowUpRight size={16}/></a></nav><button aria-label="Toggle navigation" className="menu" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button></div></header>}
 function SectionTitle({eyebrow,title,subtitle}){return <div className="section-heading"><p className="eyebrow">{eyebrow}</p><h2>{title}</h2>{subtitle&&<p className="section-subtitle">{subtitle}</p>}</div>}
 function ContactForm(){
- return <form name="portfolio-contact" method="POST" action="/contact-success.html" data-netlify="true" netlify-honeypot="bot-field" className="portfolio-contact-form">
-  <input type="hidden" name="form-name" value="portfolio-contact"/>
-  <p className="hidden-bot-field"><label>Leave this empty<input name="bot-field" tabIndex="-1" autoComplete="off"/></label></p>
+ return <form method="POST" action={"https://formsubmit.co/"+profile.email} className="portfolio-contact-form">
+  <input type="hidden" name="_subject" value="New message from Munya.port portfolio"/><input type="hidden" name="_next" value="https://munya-port.vercel.app/contact-success.html"/><input type="hidden" name="_template" value="table"/>
+  <p className="hidden-bot-field"><label>Leave this empty<input name="_honey" tabIndex="-1" autoComplete="off"/></label></p>
   <label htmlFor="contact-name">YOUR NAME<input id="contact-name" name="name" placeholder="Your full name" autoComplete="name" required maxLength="120"/></label>
   <label htmlFor="contact-email">EMAIL ADDRESS<input id="contact-email" type="email" name="email" placeholder="you@example.com" autoComplete="email" required maxLength="254"/></label>
   <label htmlFor="contact-message">YOUR MESSAGE<textarea id="contact-message" name="message" placeholder="Tell me about your project or opportunity..." rows="5" required minLength="10" maxLength="5000"/></label>
