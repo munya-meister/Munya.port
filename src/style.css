@@ -210,3 +210,6 @@ html,body,#root,main{background:#06172f!important;color:#f1f6ff}
 .ticker-inner .ticker-star{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;line-height:1}
 .ticker-inner .ticker-crystal{display:block;width:clamp(27px,2.5vw,42px);height:clamp(27px,2.5vw,42px);filter:drop-shadow(0 0 7px rgba(99,194,255,.6));transition:transform .45s ease}
 .ticker-inner .ticker-star:hover .ticker-crystal{transform:rotate(45deg) scale(1.1)}
+
+/* Uploaded crystal star art in the brand ticker */
+.ticker-inner .ticker-crystal{object-fit:contain;width:clamp(34px,3vw,50px);height:clamp(34px,3vw,50px)}
