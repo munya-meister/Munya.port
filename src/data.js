@@ -5,7 +5,7 @@ export const profile = {
   email: 'munyaradzi.mbewe01@gmail.com',
   whatsapp: '263719692697',
   cv: '/Munyaradzi-CV.pdf', // Add your CV at public/Munyaradzi-CV.pdf
-  portrait: '/images/portrait.jpg', // Add your photo at public/images/portrait.jpg
+  portrait: '/images/portrait.png', // Add your photo at public/images/portrait.png
   github: 'https://github.com/munya-meister',
 };
 export const projects = [
