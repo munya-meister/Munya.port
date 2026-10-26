@@ -182,3 +182,8 @@ html,body,#root,main{background:#06172f!important;color:#f1f6ff}
 .project-showcase-deck .card-dark{background:linear-gradient(145deg,#0c1628,#142c4d);color:#fff}
 .project-showcase-deck .card-navy{background:linear-gradient(145deg,#2161b6,#0a326c);color:#fff}
 @media(max-width:760px){.project-showcase-deck{min-height:245px}.project-showcase-deck .swing-deck{height:240px;overflow-x:auto;justify-content:flex-start;scroll-snap-type:x mandatory;gap:10px}.project-showcase-deck .swing-card{flex:0 0 155px;width:155px;min-width:155px;height:185px;transform:none;margin:0;scroll-snap-align:center}.project-showcase-deck .swing-title{font-size:13px}.project-showcase-deck .swing-graphic{font-size:42px}.project-showcase-deck .orbit-line{display:none}}
+
+/* Prevent the final 'o' in Portfolio from being cropped at the right edge. */
+.strand-heading{width:max-content!important;max-width:100%!important;overflow:visible!important;padding-right:clamp(14px,2vw,34px)!important;box-sizing:content-box!important}
+.navy-hero .strand-heading h1{display:block!important;overflow:visible!important;padding-right:.12em!important;margin-right:-.06em!important;letter-spacing:-.065em!important}
+@media(max-width:750px){.strand-heading{width:100%!important;padding-right:0!important}.navy-hero .strand-heading h1{font-size:clamp(43px,10.6vw,80px)!important;letter-spacing:-.055em!important;padding-right:.13em!important}}
