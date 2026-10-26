@@ -205,3 +205,8 @@ html,body,#root,main{background:#06172f!important;color:#f1f6ff}
 .contact-panel .portfolio-contact-form button.contact-submit:hover:not(:disabled){background:#3488f8!important;transform:translateY(-2px)}
 .contact-panel .portfolio-contact-form button.contact-submit:focus-visible{outline:3px solid #b8d9ff!important;outline-offset:3px}
 .contact-panel .portfolio-contact-form button.contact-submit:disabled{opacity:.75!important;cursor:wait}
+
+/* Faceted crystal stars replace the old asterisks in the strategy ticker. */
+.ticker-inner .ticker-star{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;line-height:1}
+.ticker-inner .ticker-crystal{display:block;width:clamp(27px,2.5vw,42px);height:clamp(27px,2.5vw,42px);filter:drop-shadow(0 0 7px rgba(99,194,255,.6));transition:transform .45s ease}
+.ticker-inner .ticker-star:hover .ticker-crystal{transform:rotate(45deg) scale(1.1)}
