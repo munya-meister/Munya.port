@@ -132,3 +132,26 @@ body{background:#f0f1f4;color:#101217}
  .navy-hero .hero-name{font-size:clamp(32px,3.8vw,54px)}
  .navy-hero .strand-heading h1{font-size:clamp(60px,6.7vw,100px)!important}
 }
+
+/* Deep navy background throughout; animated project deck is no longer in the hero. */
+html,body,#root{background:#06162f;color:#f5f8ff}
+.section,.section-muted,.about-showcase,#projects,#skills,#achievements{background:#081e3c!important;color:#f5f8ff!important;border-color:#24476c!important}
+.section-muted{background:#0b274b!important}
+.section-subtitle,.about-story-body p,.skill-card li,.project-bottom span{color:#bfd0e7!important}
+.skill-card,.project-card{background:linear-gradient(150deg,#10315c,#081b34)!important;border-color:#285184!important;color:#f4f8ff!important}
+.skill-card h3,.project-info h3,.achievement strong{color:#f5f8ff}
+.project-image{background:#0a2446!important}
+.achievement-art{color:#28517c!important}
+.contact-section{background:#0a2954!important;color:#f5f8ff!important}
+.contact-panel{background:#071b36!important}
+footer{background:#041124!important}
+.ticker{background:#112f5c!important;color:#fff!important}
+.navy-hero{min-height:0!important}
+.project-showcase-deck{height:350px;position:relative;overflow:hidden;margin:28px 0 30px;padding-top:15px;background:radial-gradient(ellipse at center,#17447744,transparent 65%);border-radius:26px}
+.project-showcase-deck .orbit-line{position:absolute;left:5%;right:5%;bottom:30px;height:125px;border:1px solid #2b80ed77;border-radius:50%;pointer-events:none}
+.project-showcase-deck .swing-deck{height:310px;display:flex;align-items:center;justify-content:center;gap:0}
+.project-showcase-deck .swing-card{width:220px;height:270px;min-width:0;flex-shrink:0}
+.project-showcase-deck .swing-graphic{display:flex;align-items:center;justify-content:center;flex:1;opacity:.3}
+.project-showcase-deck .swing-title{font-size:clamp(12px,1.3vw,18px);line-height:1.2;overflow-wrap:anywhere}
+.project-showcase-deck .swing-card small{font-size:10px}
+@media(max-width:750px){.project-showcase-deck{height:260px}.project-showcase-deck .swing-deck{height:240px;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;padding:15px 20px;gap:12px}.project-showcase-deck .swing-card{width:165px;height:195px;flex:0 0 165px;transform:none!important;margin:0!important;scroll-snap-align:center}.project-showcase-deck .swing-graphic svg{width:42px}.project-showcase-deck .orbit-line{display:none}}
