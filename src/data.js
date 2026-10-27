@@ -9,10 +9,10 @@ export const profile = {
   github: 'https://github.com/munya-meister',
 };
 export const projects = [
-  {title:'Signal Digital Lab',category:'Brand Strategy · Web Development',desc:'A digital marketing and creative brand focused on helping businesses strengthen their online presence.',url:'https://github.com/munya-meister/Signal-Digital-Lab',image:'/images/Signal%20Digital%20Lab.png'},
-  {title:'Grandmeister Groove Hub',category:'Music Platform · Web Development',desc:'A dedicated music experience exploring artist discovery, listening and direct music downloads.',url:'https://github.com/munya-meister/grandmeister-groove-hub',image:'/images/Grandmeister%20Groove.png'},
-  {title:'Audmast',category:'Music Production · Web App',desc:'A browser-based music production workspace exploring recording, editing, instruments and audio effects.',url:null,image:'/images/Audmast.png'},
-  {title:'Videl',category:'UX/UI · Video Communication',desc:'A video-focused digital product concept exploring expressive communication and user experience.',url:null,image:'/images/Videl.png'},
+  {title:'Signal Digital Lab',category:'Brand Strategy · Web Development',desc:'A digital marketing and creative brand focused on helping businesses strengthen their online presence.',url:'https://signal-digital-lab.vercel.app/',image:'/images/Signal%20Digital%20Lab.png'},
+  {title:'Grandmeister Groove Hub',category:'Music Platform · Web Development',desc:'A dedicated music experience exploring artist discovery, listening and direct music downloads.',url:'https://grandmeister-groove-hub.vercel.app/',image:'/images/Grandmeister%20Groove.png'},
+  {title:'Audmast',category:'Music Production · Web App',desc:'A browser-based music production workspace exploring recording, editing, instruments and audio effects.',url:'https://audmast.vercel.app/',image:'/images/Audmast.png'},
+  {title:'Videl',category:'UX/UI · Video Communication',desc:'A video-focused digital product concept exploring expressive communication and user experience.',url:'https://videl-one.vercel.app/',image:'/images/Videl.png'},
   {title:'Brooklive',category:'Streaming Platform · Product Design',desc:'A live-streaming platform concept designed around administrator and approved-broadcaster access.',url:'https://github.com/munya-meister/Brooklive',image:'/images/brooklive.jpg'},
   {title:'Mutsara',category:'UX/UI · Community Technology',desc:'A digital product concept exploring a better way to navigate bank queues.',url:'https://github.com/munya-meister/mutsara',image:'/images/mutsara.jpg'},
   {title:'Places of Bliss',category:'Travel Discovery · Web App',desc:'A discovery experience for exploring venues and places to relax or celebrate in Zimbabwe.',url:null,image:'/images/places-of-bliss.jpg'},
