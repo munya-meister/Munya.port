@@ -4,7 +4,7 @@ export const profile = {
   tagline: 'DIGITAL MARKETER · WEB DEVELOPER · CREATIVE DESIGNER',
   email: 'munyaradzi.mbewe01@gmail.com',
   whatsapp: '263719692697',
-  cv: '/Munyaradzi-CV.pdf', // Add your CV at public/Munyaradzi-CV.pdf
+  cv: '/cv.pdf', // Place the file at public/cv.pdf
   portrait: '/images/portrait%20(2).png', // Verified existing image in public/images/
   github: 'https://github.com/munya-meister',
 };
